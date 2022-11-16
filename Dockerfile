@@ -15,8 +15,9 @@ COPY events events
 COPY repository repository
 COPY database database
 COPY search search
-COPY services/feed-service feed-service
 COPY models models
+COPY services/feed-service feed-service
+COPY services/query-service query-service
 
 RUN go install ./...
 
