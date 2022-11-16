@@ -73,11 +73,11 @@ func main() {
 
 	router := newRouter()
 
+	log.Println("Started serve on port 8080")
 	if err := http.ListenAndServe(":8080", router); err != nil {
 		log.Fatal(err)
 	}
 
-	log.Println("Started serve on port 8080")
 }
 
 func newRouter() (router *mux.Router) {
