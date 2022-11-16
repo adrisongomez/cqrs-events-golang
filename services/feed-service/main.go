@@ -29,7 +29,7 @@ func main() {
 	}
 
 	addr := fmt.Sprintf(
-		"postgres://%s:%s@postgres/%s?ssmode=disable",
+		"postgres://%s:%s@postgres/%s?sslmode=disable",
 		cfg.PostgresUser,
 		cfg.PostgresPassword,
 		cfg.PostgresDB,
